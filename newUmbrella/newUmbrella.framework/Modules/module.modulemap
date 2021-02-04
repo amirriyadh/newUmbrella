@@ -1,0 +1,6 @@
+framework module newUmbrella {
+  umbrella header "newUmbrella.h"
+
+  export *
+  module * { export * }
+}

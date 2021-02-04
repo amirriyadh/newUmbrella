@@ -3,17 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		CD7427B925CC9AB50046B395 /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CD7427BA25CC9AB50046B395 /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				CD7427C625CC9B2F0046B395 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		46858C21B9A50C1669C04E51 /* Pods_newUmbrella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC370B7B6E877C90DDE79097 /* Pods_newUmbrella.framework */; };
 		CD7427B225CC9AA40046B395 /* newUmbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7427B025CC9AA40046B395 /* newUmbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD7427CF25CC9CA60046B395 /* HelloUmbrella.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7427CE25CC9CA60046B395 /* HelloUmbrella.swift */; };
+		CD7427D925CC9FAA0046B395 /* newSubframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7427D825CC9FAA0046B395 /* newSubframework.framework */; platformFilter = ios; };
+		CD7427DA25CC9FB00046B395 /* newSubframework.framework in Resources */ = {isa = PBXBuildFile; fileRef = CD7427D825CC9FAA0046B395 /* newSubframework.framework */; platformFilter = ios; };
+		CD7427DC25CC9FBD0046B395 /* newSubframework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD7427D825CC9FAA0046B395 /* newSubframework.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CD7427DB25CC9FB40046B395 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD7427DC25CC9FBD0046B395 /* newSubframework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		521D05CCDDDA1C57A80C7FE4 /* Pods-newUmbrella.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newUmbrella.debug.xcconfig"; path = "Target Support Files/Pods-newUmbrella/Pods-newUmbrella.debug.xcconfig"; sourceTree = "<group>"; };
+		BC370B7B6E877C90DDE79097 /* Pods_newUmbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newUmbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7427AD25CC9AA40046B395 /* newUmbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = newUmbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7427B025CC9AA40046B395 /* newUmbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = newUmbrella.h; sourceTree = "<group>"; };
 		CD7427B125CC9AA40046B395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7427CE25CC9CA60046B395 /* HelloUmbrella.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloUmbrella.swift; sourceTree = "<group>"; };
+		CD7427D825CC9FAA0046B395 /* newSubframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = newSubframework.framework; sourceTree = "<group>"; };
+		D595E03CD30922682A0E746A /* Pods-newUmbrella.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newUmbrella.release.xcconfig"; path = "Target Support Files/Pods-newUmbrella/Pods-newUmbrella.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +58,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46858C21B9A50C1669C04E51 /* Pods_newUmbrella.framework in Frameworks */,
+				CD7427D925CC9FAA0046B395 /* newSubframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CCC228997D7333277D19BBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC370B7B6E877C90DDE79097 /* Pods_newUmbrella.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		554277D6BD29ECAB79B1667A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				521D05CCDDDA1C57A80C7FE4 /* Pods-newUmbrella.debug.xcconfig */,
+				D595E03CD30922682A0E746A /* Pods-newUmbrella.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CD7427A325CC9AA40046B395 = {
 			isa = PBXGroup;
 			children = (
+				CD7427CB25CC9C5C0046B395 /* Sources */,
 				CD7427AF25CC9AA40046B395 /* newUmbrella */,
 				CD7427AE25CC9AA40046B395 /* Products */,
+				554277D6BD29ECAB79B1667A /* Pods */,
+				0CCC228997D7333277D19BBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +105,35 @@
 		CD7427AF25CC9AA40046B395 /* newUmbrella */ = {
 			isa = PBXGroup;
 			children = (
+				CD7427D825CC9FAA0046B395 /* newSubframework.framework */,
 				CD7427B025CC9AA40046B395 /* newUmbrella.h */,
 				CD7427B125CC9AA40046B395 /* Info.plist */,
 			);
 			path = newUmbrella;
+			sourceTree = "<group>";
+		};
+		CD7427CB25CC9C5C0046B395 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CD7427CD25CC9C9A0046B395 /* Assets */,
+				CD7427CC25CC9C950046B395 /* Classes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CD7427CC25CC9C950046B395 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CD7427CE25CC9CA60046B395 /* HelloUmbrella.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CD7427CD25CC9C9A0046B395 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD7427B525CC9AA40046B395 /* Build configuration list for PBXNativeTarget "newUmbrella" */;
 			buildPhases = (
+				4F96DDF0F49412F4F865DB40 /* [CP] Check Pods Manifest.lock */,
 				CD7427A825CC9AA40046B395 /* Headers */,
 				CD7427A925CC9AA40046B395 /* Sources */,
 				CD7427AA25CC9AA40046B395 /* Frameworks */,
 				CD7427AB25CC9AA40046B395 /* Resources */,
+				CD7427DB25CC9FB40046B395 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -94,6 +180,10 @@
 				TargetAttributes = {
 					CD7427AC25CC9AA40046B395 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+					CD7427B925CC9AB50046B395 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
@@ -111,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				CD7427AC25CC9AA40046B395 /* newUmbrella */,
+				CD7427B925CC9AB50046B395 /* Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -120,16 +211,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7427DA25CC9FB00046B395 /* newSubframework.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F96DDF0F49412F4F865DB40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-newUmbrella-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD7427C625CC9B2F0046B395 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\nOUTPUT_FOLDER=${PROJECT_DIR}/newUmbrella\n\nfor V in ${BUILD_VARIANTS}; do\n    for A in ${ARCHS}; do\n        unset SWIFT_RESPONSE_FILE_PATH_${V}_${A}\n    done\ndone\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n# Step 1. Build Device and Simulator versions. This also include the b\n\n\nxcodebuild BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" -UseModernBuildSystem=NO clean build\n\nxcodebuild BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" -UseModernBuildSystem=NO clean build\n\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n# Step 3. Copy Swift modules (from iphonesimulator build) to the copied framework directory\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${OUTPUT_FOLDER}\"\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${OUTPUT_FOLDER}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD7427A925CC9AA40046B395 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7427CF25CC9CA60046B395 /* HelloUmbrella.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,13 +395,50 @@
 		};
 		CD7427B625CC9AA40046B395 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521D05CCDDDA1C57A80C7FE4 /* Pods-newUmbrella.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3JUJ5TAF49;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/newUmbrella",
+				);
+				INFOPLIST_FILE = newUmbrella/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amirriyadh.newUmbrella;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD7427B725CC9AA40046B395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D595E03CD30922682A0E746A /* Pods-newUmbrella.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3JUJ5TAF49;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/newUmbrella",
+				);
 				INFOPLIST_FILE = newUmbrella/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -280,29 +452,25 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Release;
 		};
-		CD7427B725CC9AA40046B395 /* Release */ = {
+		CD7427BB25CC9AB50046B395 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3JUJ5TAF49;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = newUmbrella/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = amirriyadh.newUmbrella;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD7427BC25CC9AB50046B395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JUJ5TAF49;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -323,6 +491,15 @@
 			buildConfigurations = (
 				CD7427B625CC9AA40046B395 /* Debug */,
 				CD7427B725CC9AA40046B395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD7427BA25CC9AB50046B395 /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD7427BB25CC9AB50046B395 /* Debug */,
+				CD7427BC25CC9AB50046B395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
