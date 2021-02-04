@@ -24,19 +24,19 @@
 		46858C21B9A50C1669C04E51 /* Pods_newUmbrella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC370B7B6E877C90DDE79097 /* Pods_newUmbrella.framework */; };
 		CD7427B225CC9AA40046B395 /* newUmbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7427B025CC9AA40046B395 /* newUmbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD7427CF25CC9CA60046B395 /* HelloUmbrella.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7427CE25CC9CA60046B395 /* HelloUmbrella.swift */; };
-		CD7427D925CC9FAA0046B395 /* newSubframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7427D825CC9FAA0046B395 /* newSubframework.framework */; platformFilter = ios; };
-		CD7427DA25CC9FB00046B395 /* newSubframework.framework in Resources */ = {isa = PBXBuildFile; fileRef = CD7427D825CC9FAA0046B395 /* newSubframework.framework */; platformFilter = ios; };
-		CD7427DC25CC9FBD0046B395 /* newSubframework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD7427D825CC9FAA0046B395 /* newSubframework.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD7427E825CCB4260046B395 /* newSubframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7427E725CCB4260046B395 /* newSubframework.framework */; platformFilter = ios; };
+		CD7427E925CCB44C0046B395 /* newSubframework.framework in Resources */ = {isa = PBXBuildFile; fileRef = CD7427E725CCB4260046B395 /* newSubframework.framework */; platformFilter = ios; };
+		CD7427EA25CCB4530046B395 /* newSubframework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD7427E725CCB4260046B395 /* newSubframework.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CD7427DB25CC9FB40046B395 /* CopyFiles */ = {
+		CD7427E425CCAFAB0046B395 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CD7427DC25CC9FBD0046B395 /* newSubframework.framework in CopyFiles */,
+				CD7427EA25CCB4530046B395 /* newSubframework.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +49,7 @@
 		CD7427B025CC9AA40046B395 /* newUmbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = newUmbrella.h; sourceTree = "<group>"; };
 		CD7427B125CC9AA40046B395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD7427CE25CC9CA60046B395 /* HelloUmbrella.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloUmbrella.swift; sourceTree = "<group>"; };
-		CD7427D825CC9FAA0046B395 /* newSubframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = newSubframework.framework; sourceTree = "<group>"; };
+		CD7427E725CCB4260046B395 /* newSubframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = newSubframework.framework; sourceTree = "<group>"; };
 		D595E03CD30922682A0E746A /* Pods-newUmbrella.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newUmbrella.release.xcconfig"; path = "Target Support Files/Pods-newUmbrella/Pods-newUmbrella.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46858C21B9A50C1669C04E51 /* Pods_newUmbrella.framework in Frameworks */,
-				CD7427D925CC9FAA0046B395 /* newSubframework.framework in Frameworks */,
+				CD7427E825CCB4260046B395 /* newSubframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 		CD7427AF25CC9AA40046B395 /* newUmbrella */ = {
 			isa = PBXGroup;
 			children = (
-				CD7427D825CC9FAA0046B395 /* newSubframework.framework */,
+				CD7427E725CCB4260046B395 /* newSubframework.framework */,
 				CD7427B025CC9AA40046B395 /* newUmbrella.h */,
 				CD7427B125CC9AA40046B395 /* Info.plist */,
 			);
@@ -159,7 +159,7 @@
 				CD7427A925CC9AA40046B395 /* Sources */,
 				CD7427AA25CC9AA40046B395 /* Frameworks */,
 				CD7427AB25CC9AA40046B395 /* Resources */,
-				CD7427DB25CC9FB40046B395 /* CopyFiles */,
+				CD7427E425CCAFAB0046B395 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -211,7 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD7427DA25CC9FB00046B395 /* newSubframework.framework in Resources */,
+				CD7427E925CCB44C0046B395 /* newSubframework.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

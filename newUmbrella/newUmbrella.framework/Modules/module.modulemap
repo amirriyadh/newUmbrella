@@ -4,3 +4,8 @@ framework module newUmbrella {
   export *
   module * { export * }
 }
+
+module newUmbrella.Swift {
+    header "newUmbrella-Swift.h"
+    requires objc
+}

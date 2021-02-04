@@ -6,7 +6,6 @@
 //
 
 import Foundation
-//import newSubframework
 import newSubframework
 
 public class HelloUmbrella {
